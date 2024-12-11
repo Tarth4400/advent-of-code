@@ -11,32 +11,31 @@ namespace day1
     {
         static void Main()
         {
+            var listOne = new List<int>();
+            var listTwo = new List<int>();
             int final = 0;
             string path = "input.txt";
             string[] readText = File.ReadAllLines(path);
             foreach (string s in readText)
             {
-                System.Console.WriteLine("compare " + s);
                 List<string> line = s.Split(new char[0], StringSplitOptions.RemoveEmptyEntries).ToList();
-                int[] numOne = Array.ConvertAll(line[0].ToCharArray(), c => (int)Char.GetNumericValue(c));
-                int[] numTwo = Array.ConvertAll(line[1].ToCharArray(), c => (int)Char.GetNumericValue(c));
-
-                final += shortestPath(numOne, numTwo);
-                System.Console.WriteLine(final);
+                listOne.Add(int.Parse(line[0]));
+                listTwo.Add(int.Parse(line[1]));
 
             }
-            Console.WriteLine("Total " + final);
+            final += shortestPath(listOne, listTwo);
+            System.Console.WriteLine(final);
         }
 
-        public static int shortestPath(int[] listOne, int[] listTwo)
+        public static int shortestPath(List<int> listOne, List<int> listTwo)
         {
             int value = 0;
-            Array.Sort(listOne);
-            Array.Sort(listTwo);
+            listOne.Sort();
+            listTwo.Sort();
 
-            for(int i =0; i < listOne.Length; i++)
+            for(int i =0; i < listOne.Count; i++)
             {
-                System.Console.WriteLine(listOne[i]);
+               // System.Console.WriteLine(listOne[i]);
                 value += Math.Abs(listOne[i] - listTwo[i]);
             }
             return value;
