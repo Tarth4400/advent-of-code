@@ -1,0 +1,14 @@
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\bin\Debug\net9.0\day1.exe
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\bin\Debug\net9.0\day1.deps.json
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\bin\Debug\net9.0\day1.runtimeconfig.json
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\bin\Debug\net9.0\day1.dll
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\bin\Debug\net9.0\day1.pdb
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.AssemblyInfoInputs.cache
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.AssemblyInfo.cs
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.csproj.CoreCompileInputs.cache
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.dll
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\refint\day1.dll
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.pdb
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.genruntimeconfig.cache
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\ref\day1.dll
