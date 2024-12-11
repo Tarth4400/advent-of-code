@@ -12,3 +12,4 @@ c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\refint\day1.d
 c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.pdb
 c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.genruntimeconfig.cache
 c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\ref\day1.dll
+c:\Users\LlewellynMiller\repo\advent-of-code\day1\obj\Debug\net9.0\day1.sourcelink.json
