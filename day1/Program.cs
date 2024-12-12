@@ -14,40 +14,44 @@ namespace day1
     {
         static void Main()
         {
+            var(listOne, listTwo) = createSortedLists("input.txt");
+            System.Console.WriteLine(shortestPath(listOne, listTwo));
+            System.Console.WriteLine(PartTwo(listOne, listTwo));
+        }
+
+        public static (List<int>listOne, List<int> listTwo) createSortedLists(string path) 
+        {
+            //splits the input file into 2 sorted lists
             var listOne = new List<int>();
             var listTwo = new List<int>();
-            string path = "input.txt";
             string[] readText = File.ReadAllLines(path);
             foreach (string s in readText)
             {
                 List<string> line = s.Split(new char[0], StringSplitOptions.RemoveEmptyEntries).ToList();
                 listOne.Add(int.Parse(line[0]));
                 listTwo.Add(int.Parse(line[1]));
-
             }
-            System.Console.WriteLine(shortestPath(listOne, listTwo));
-            System.Console.WriteLine(PartTwo(listOne, listTwo));
+            listOne.Sort();
+            listTwo.Sort();
+            return (listOne, listTwo);
         }
+
 
         public static int shortestPath(List<int> listOne, List<int> listTwo)
         {
-            int value = 0;
-            listOne.Sort();
-            listTwo.Sort();
-
+            //compares each number in the lists and works out the distance between then eg: 1 and 3, distance 2
+            var value = 0;
             for(int i =0; i < listOne.Count; i++)
             {
-               // System.Console.WriteLine(listOne[i]);
                 value += Math.Abs(listOne[i] - listTwo[i]);
             }
             return value;
         }
         public static int PartTwo(List<int> listOne, List<int> listTwo)
         {
-            int value = 0;
-            int final = 0;
-            listOne.Sort();
-            listTwo.Sort();
+            //finds duplucates in the lists and adds them togehter 
+            var value = 0;
+            var final = 0;
 
             for(int i=0; i < listOne.Count; i++)
             {
